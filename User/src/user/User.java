@@ -14,16 +14,10 @@ public class User {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws Exception { 
-      URL url = new URL(args[0]); 
-      try (BufferedReader reader = new BufferedReader(
-          new InputStreamReader(url.openStream()))) { 
-            String inputLine = null; 
-            while ((inputLine = reader.readLine()) != null) { 
-                  System.out.println(inputLine); 
-             } 
-       } catch (IOException x) { 
-               System.err.println(x); 
-       } 
+      for (int hilos=0; hilos<100;hilos++){
+        hiloConsulta hc= new hiloConsulta(hilos,"https://boiling-scrubland-02497.herokuapp.com");
+        hc.start();
+    }
     } 
     
 }
