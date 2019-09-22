@@ -1,4 +1,4 @@
-# Taller-de-Introducci-n-a-AWS
+# Taller Introducción a AWS
 
 repo del servidor con balanceador :
 
