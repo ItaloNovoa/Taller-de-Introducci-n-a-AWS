@@ -21,16 +21,11 @@ public class hiloConsulta extends Thread {
     }
 
     public void run() {
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 10; i++) {
             try (BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()))) {
                 String inputLine = null;
-                System.out.println("");
-                System.out.println("SOY EL HIL9O NUMERO "+numeroHilo);
-                System.out.println("SOY EL HIL9O NUMERO "+numeroHilo);
-                System.out.println("SOY EL HIL9O NUMERO "+numeroHilo);
-                System.out.println("");
+                System.out.println("SOY EL HILO NUMERO "+numeroHilo);                
                 while ((inputLine = reader.readLine()) != null) {
-                    System.out.println(inputLine);
                 }
             } catch (IOException x) {
                 System.err.println(x);

@@ -15,7 +15,7 @@ public class User {
      */
     public static void main(String[] args) throws Exception { 
       for (int hilos=0; hilos<100;hilos++){
-        hiloConsulta hc= new hiloConsulta(hilos,"https://boiling-scrubland-02497.herokuapp.com");
+        hiloConsulta hc= new hiloConsulta(hilos,args[0]);
         hc.start();
     }
     } 
