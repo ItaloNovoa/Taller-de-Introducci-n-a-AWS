@@ -21,17 +21,17 @@ public class hiloConsulta extends Thread {
     }
 
     public void run() {
+        
         for (int i = 0; i < 10; i++) {
             try (BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()))) {
                 String inputLine = null;
-                System.out.println("SOY EL HILO NUMERO "+numeroHilo);                
+                //System.out.println("SOY EL HILO NUMERO "+numeroHilo);                
                 while ((inputLine = reader.readLine()) != null) {
                 }
             } catch (IOException x) {
-                System.err.println(x);
+                //System.err.println(x);
             }
         }
-
+        
     }
-
 }

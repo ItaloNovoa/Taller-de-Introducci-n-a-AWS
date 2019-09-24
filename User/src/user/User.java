@@ -5,19 +5,27 @@
  */
 package user;
 
-import java.io.*; 
-import java.net.*; 
+import java.io.*;
+import java.net.*;
 
 public class User {
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws Exception { 
-      for (int hilos=0; hilos<100;hilos++){
-        hiloConsulta hc= new hiloConsulta(hilos,args[0]);
-        hc.start();
+    public static void main(String[] args) throws Exception {
+        //long startTime = System.currentTimeMillis();
+        hiloConsulta hc=null;
+        for (int hilos = 0; hilos < 10; hilos++) {
+            hc = new hiloConsulta(hilos, args[0]);
+            hc.start();
+        }
+        hc.join();
+        /**
+        if(hc.isAlive()!=true){
+            long endTime = System.currentTimeMillis() - startTime;
+            System.out.println(endTime);
+        } */     
     }
-    } 
-    
+
 }
