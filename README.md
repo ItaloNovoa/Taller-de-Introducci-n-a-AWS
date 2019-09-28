@@ -6,7 +6,7 @@ repo del servidor con balanceador :
 
 https://github.com/ItaloNovoa/ProyectoAREM
 # Articulo
-- vea el archivo [Articulo.docx] (Articulo.docx) para más detalles
+- vea el archivo [Articulo.docx](Articulo.docx) para más detalles
 
 # Construido con
 - Maven
@@ -16,4 +16,4 @@ https://github.com/ItaloNovoa/ProyectoAREM
 
 - Italo Orlando Cufiño Novoa
 # LICENCIA
-- vea el archivo [LICENSE.md] (LICENSE.md) para más detalles
+- vea el archivo [LICENSE.md](https://github.com/ItaloNovoa/Taller-de-Introducci-n-a-AWS/blob/master/LICENSE.md) para más detalles
